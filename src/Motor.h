@@ -10,13 +10,13 @@
 
 class Motor {
 public:
-	void setDrive(float speed, unsigned int dur);
+	void setDrive(float speed, float dur);
 	float getmSpeed();
 	unsigned int getmDur();
 	int calculateDistance();
 private:
 	float mSpeed;
-	unsigned int mDur;
+	float mDur;
 	int distance;
 
 };

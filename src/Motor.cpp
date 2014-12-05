@@ -8,11 +8,11 @@
 
 #define MOTOR_MAX_SPEED 2 // revolutions per second
 #define WHEEL_DIAMETER 10 // cm
-#define PI 3.1415
+#define PI 3.1415         // Archimedes
 
 
 
-void Motor::setDrive(float speed, unsigned int dur)
+void Motor::setDrive(float speed, float dur)
 {
 	mSpeed = speed;
 	mDur = dur;
