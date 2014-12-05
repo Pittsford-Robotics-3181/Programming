@@ -11,6 +11,7 @@ using namespace std;
 #include "Simulation.h"
 
 
+//TODO: Please note how enumerations should be wrapped in namespaces
 namespace Direction {
 enum Direction {
 	forward, backward, right
