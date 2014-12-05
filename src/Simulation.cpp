@@ -10,7 +10,7 @@
 #include <iostream>
 
 Sensor * Simulation::getSensor() {
-	distanceSensor = new Sensor;
+	distanceSensor = new Sensor(this);
 	return distanceSensor;
 }
 
@@ -40,4 +40,19 @@ void Simulation::execute() {
 
 	std::cout << "Robot X: " << robotX << "  Robot Y: " << robotY << std::endl;
 }
-
+int Simulation::getrX()
+{
+	return robotX;
+}
+int Simulation::getrY()
+{
+	return robotY;
+}
+int Simulation::gettX()
+{
+	return targetX;
+}
+int Simulation::gettY()
+{
+	return targetY;
+}

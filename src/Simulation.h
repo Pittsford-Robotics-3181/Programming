@@ -20,6 +20,10 @@ public:
 	void setTarget(int x, int y);
 	void setRobot(int x, int y, unsigned int orientation);
 	void execute();
+	int getrX();
+	int getrY();
+	int gettX();
+	int gettY();
 
 private:
 	Sensor * distanceSensor;
