@@ -5,7 +5,9 @@
  *      Author: Owner
  */
 #include "Simulation.h"
-#include <stddef>
+#include <stddef.h>
+#include <math.h>
+#include <iostream>
 
 Sensor * Simulation::getSensor() {
 	distanceSensor = new Sensor;
@@ -30,6 +32,12 @@ void Simulation::setRobot(int x, int y, unsigned int orientation) {
 	rOrientation = orientation;
 }
 void Simulation::execute() {
-	int averageDistance = (rMotor->calculateDistance() + lMotor->calculateDistance()) / 2;
+	int averageDistance = (rMotor->calculateDistance() + lMotor->calculateDistance())/2;
+	unsigned int newOrientation = (((rMotor->calculateDistance() - lMotor->calculateDistance())/18) + rOrientation);
+    //Calculate where the robot is now!
+	robotX = (averageDistance * (cos(newOrientation)) + robotX);
+	robotY = (averageDistance * (cos(newOrientation)) + robotY);
+
+	std::cout << "Robot X: " << robotX << "  Robot Y: " << robotY << std::endl;
 }
 
