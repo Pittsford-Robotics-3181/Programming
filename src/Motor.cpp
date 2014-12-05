@@ -8,7 +8,7 @@
 
 #define MOTOR_MAX_SPEED 2 // revolutions per second
 #define WHEEL_DIAMETER 10 // cm
-#define PI 3.1415
+#define PI 3.1415         // Archimedes
 
 
 
