@@ -24,6 +24,7 @@ public:
 	int getrY();
 	int gettX();
 	int gettY();
+	
 
 private:
 	Sensor * distanceSensor;

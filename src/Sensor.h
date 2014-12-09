@@ -14,9 +14,9 @@
 class Sensor {
 public:
 	float getValue();
-	Sensor(Simulation * sim);
+	Sensor(Simulation* sim);
 private:
-	Simulation * simulation;
+	Simulation* simulation;
 };
 
 
