@@ -12,6 +12,6 @@ Sensor::Sensor(Simulation * sim){
 }
 float Sensor::getValue()
 {
-	return 1.0 - ((((simulation->getrX() - simulation->gettX())*(simulation->getrX() - simulation->gettX()) + (simulation->getrY() - simulation->gettY())*(simulation->getrY() - simulation->gettY()))*((simulation->getrX() - simulation->gettX())*(simulation->getrX() - simulation->gettX()) + (simulation->getrY() - simulation->gettY())*(simulation->getrY() - simulation->gettY())))/10000); // strength=1 - ((distance^2)/10,000)
+	return 1.0 - (((pow(simulation->getrX() - simulation->gettX(),2) + pow(simulation->getrY() - simulation->gettY(),2)))/10000); // strength=1 - ((distance^2)/10,000)
 }
 
