@@ -46,7 +46,6 @@ Direction::Direction calculateDirection(float current, float last,
 ;
 
 int main() {
-
 	Motor * lMotor;
 	Motor * rMotor;
 
@@ -78,6 +77,7 @@ int main() {
 		} else if (direction == Direction::backward) {
 			backwardM(lMotor, rMotor);
 		}
+		simulation->execute();
 
 	}
 }

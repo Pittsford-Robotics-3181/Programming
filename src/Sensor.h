@@ -8,15 +8,14 @@
 #ifndef SENSOR_H_
 #define SENSOR_H_
 
-#include "Simulation.h"
-
+class Simulation;
 
 class Sensor {
 public:
 	float getValue();
-	Sensor(Simulation* sim);
+	Sensor(Simulation * sim);
 private:
-	Simulation* simulation;
+	Simulation * simulation;
 };
 
 

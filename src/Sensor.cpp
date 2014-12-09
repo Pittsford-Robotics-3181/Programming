@@ -4,7 +4,6 @@
  *  Created on: Nov 25, 2014
  *      Author: Owner
  */
-#include "Sensor.h"
 #include <math.h>
 #include "Simulation.h"
 
