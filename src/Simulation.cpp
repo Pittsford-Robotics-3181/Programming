@@ -42,7 +42,7 @@ void Simulation::execute() {
 }
 int Simulation::getrX()
 {
-	return robotX - 1;
+	return robotX;
 }
 int Simulation::getrY()
 {
