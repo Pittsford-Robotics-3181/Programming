@@ -9,6 +9,7 @@
 using namespace std;
 
 #include "Simulation.h"
+#include <math.h>
 
 
 //TODO: Please note how enumerations should be wrapped in namespaces
@@ -17,6 +18,9 @@ enum Direction {
 	forward, backward, right
 };
 }
+//void setRandTarget(int x, int y, Simulation* simulation){
+	//simulation->setTarget()
+//}
 
 void forwardM(Motor *lmotor, Motor *rmotor) {
 	lmotor->setDrive(.2, .5);
@@ -50,6 +54,9 @@ int main() {
 	Motor * rMotor;
 
 	Simulation* simulation = new Simulation();
+
+	simulation->setTarget(50,50);
+	simulation->setRobot(4,4,0);
 
 	Sensor* sensor = simulation->getSensor();
 	lMotor = simulation->getLMotor();
