@@ -34,6 +34,4 @@ private:
 
 };
 
-
-
 #endif /* SIMULATION_H_ */
